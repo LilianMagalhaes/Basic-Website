@@ -1,0 +1,283 @@
+body{
+    box-sizing: border-box;
+    color: white;
+    background-color:  rgb(86, 124, 156) !important; 
+    padding:0;
+    margin:0; 
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    overflow: auto;
+}
+
+header{
+    position: fixed;
+    top:0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    background-color: black;
+    padding-top:10px;
+    padding-bottom:5px;
+    width: 100%;
+    line-height: .5rem;
+}
+#header-title {
+    display: flex;
+    flex-direction: row;
+}
+
+#project-title,
+#project-subtitle {
+    color:white;
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+#navBar {
+    position: fixed;
+    top: 30px !important;
+    color: white !important;
+    background-color:  rgb(0, 36, 65) !important;
+}
+.nav-link{
+    color:white !important;
+    line-height: 2rem;
+}
+
+#img-logo{
+    position:relative;
+    height: 50px;
+    width: auto;
+}
+
+button {
+    color: white;
+    display: block;
+    background-color: rgb(0, 36, 65) !important;
+    border: none;
+    cursor: pointer;
+    font-size: 40px !important;
+    }
+
+.mobile{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.weather-wrap{
+    color: black;
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    padding:5px;
+    border-radius: 5px;
+    
+}
+
+.article {
+    padding-top: 100px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    flex-direction: column !important;
+    background-color:  rgb(86, 124, 156) !important; 
+}
+
+.title-article{
+    position:relative;
+    color: rgb(0, 36, 65);
+    font-weight: 600 !important; 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding-top: 15px;
+    z-index: 2;
+}
+
+.subtitle-article{
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    padding-top: 15px;
+    z-index: 2;
+}
+
+.text-article{
+    color: black !important;
+    font-size: .9rem;
+    padding-top: 20px;
+}
+.img-fluid{
+    padding-bottom: 30px;
+}
+
+footer{
+    color:white;
+    align-items: center;
+    font-size: .8rem;
+    background-color:  black;
+    width:100%;
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    height:30px;
+    
+}
+
+#img-home,
+.screen{
+    display: none;
+}
+
+
+/*----------start media queries----------*/
+/*galaxy z-fold*/
+@media (max-width: 281px) {
+    .img-fluid{
+        display: none;
+    }
+
+    .weather-wrap{
+        margin-right: 75px;
+    }
+
+}
+
+/*screens*/
+@media (min-width: 769px) {
+    .mobile {
+        display:none;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: black;
+        height: 100vh;
+        z-index: 0;
+    }
+
+    #img-home{
+        position:relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        vertical-align: top !important;
+        margin: 0;
+    }
+
+    #header-title{
+        position: fixed;
+        height: 75px;
+        top:0;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        padding-top:10px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;     
+    }
+    
+    #project-title,
+    #project-subtitle {
+        position: relative;
+        top:20px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+#img-logo{
+    top:0;
+    height: 50px;
+    width: auto;
+}
+
+.nav-link {
+    color: white !important;
+    position:relative;
+    top:0;
+    left:10px;
+    padding-left: 15px !important;
+    font-size: 1.2rem !important;
+}
+
+    .navbar-nav,
+    #navBar {
+        position:relative;
+        top:0px !important;
+        height: 90px !important;
+        color: white !important;
+        background-color:  rgb(0, 36, 65) !important;
+        display:flex !important;
+        flex-direction: row !important;
+    }
+
+    #wrap{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .screen{
+        
+        display: block;
+        flex-direction: column;
+        background-color:rgb(239, 240, 237);
+        text-align: left;
+        padding:20px;   
+    }
+    
+    #searchTittle{
+        font-size: 1rem;
+    }
+    
+    #search_bar{
+        width: 80%;
+        height:10%;
+        padding-top:0;
+        margin-left:20px;
+    }
+    
+    #weather{
+        width: 100%;
+        height:auto;
+    }
+
+    .article {
+        top:0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color:  rgb(86, 124, 156) !important;
+        height: 100%;
+        padding-left:30px;
+        padding-right:30px;   
+    }
+
+    footer{
+        color:white;
+        background-color:  black;
+        position: fixed;
+        width:100%;
+        bottom:0;
+        font-size:1rem !important;
+        text-align: center;
+        height:80px;
+        
+    }
+
+}

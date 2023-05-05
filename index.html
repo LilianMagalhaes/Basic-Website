@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/styles.css"/>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <!-- bundle for  menu dropdown -->
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="public/js/weather.js"></script>
+    <script type="text/javascript" src="public/js/fetchHtml.js"></script>
+</head>
+<body>
+  
+    <header>
+      <section id="header-title">
+        <h2 class="ps-4" id="project-title">Projet 1:</h2>
+        <h1 class="ps-4" id="project-subtitle">L'informatique, ca pollue!</h1>
+      </section>
+      <img id="img-home" src="public/images/image-home.png" alt="">
+    </header>
+    <nav id="navBar" class="navbar pt-0 ps-3 pe-1 pb-2 navbar-expand-md fixed-top">
+        
+          <a class="navbar-brand pb-0" href="#"><img id="img-logo" src="public/images/1420746010.png" alt=""></a>
+          <button class="mobile" data-bs-toggle="collapse" type="button" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            
+              <a href="#" class="nav-link active menu" aria-current="page" id="Accueil">Accueil</a>
+              <a href="#" class="nav-link active menu" id='Fabrication'>Fabrication</a>
+              <a href="#" class="nav-link active menu" id="Utilisation">Utilisation</a>
+              <a href="#" class="nav-link active menu" id="Elimination">Elimination</a>
+              <a href="#" class="nav-link active menu" id="Solution">Solution</a>
+              <aside class="mobile">
+                <div class="weather-wrap">
+                  <span href="#" class="mobile" id="weather2"></span> 
+                </div>
+                </br>
+                <h3 class="mobile" id="searchTittle">Rechercher</h3>
+                <input class="mobile" id="search_bar" type="search" value="" placeholder="Rechercher..."></input>
+            </aside>
+            
+          </div>
+        
+      </nav>
+      <section id="wrap">
+        <article id="content-wrap" class="container-fluid article pe-4"> 
+            LOAD PAGES
+            </article>
+            <aside class="screen">
+                <h3 class="screen" id="weatherTittle">Meteo</h3>
+                <span href="#" class="screen" id="weather"></span> 
+                </br>
+                
+                  <h3 class="screen" id="searchTittle">Rechercher</h3>
+                  <div id="searchbar"></div>
+                  <input class="screen" id="search_bar" type="search" value="" placeholder="Rechercher..."></input>
+              </div>
+              </aside>
+          </section>
+<footer class="pt-1 pt-md-4">
+Copyright • Lilian Magalhaes • 2023
+</footer>
+
+</body>
+</html>
